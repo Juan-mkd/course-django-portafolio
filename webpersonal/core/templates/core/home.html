@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "core/base.html" %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title %}Portada {% endblock %}</title>
+</head>
+<body>
+    {% comment %}  para que se vea la imagen que esta en  la base el codigo debe quedar en una sola liea sino no aparese la imagen  {% endcomment %}
+    {%block background%} {% load static %}{% static 'core/img/home-bg.jpg' %}{%endblock%}
+    
+
+
+    {%block headers %} 
+    <h1>JUAN C</h1>
+    <span class="subheading">Trainee the udemy</span>
+    {%endblock%}
+   
+    <!--  estos tags muestre este contenido y con el extend se muestra lo que hay en la base -->
+    {%block content %} 
+    <h3>esto es la portada</h3> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam reprehenderit alias sapiente necessitatibus dolor sit temporibus omnis aspernatur debitis velit earum, quibusdam magni, ratione corrupti a expedita modi quisquam.</p>
+    
+    {% endblock %}
+   
+</body>
+</html>
